@@ -67,3 +67,7 @@ li > button {
 .show {
   display: inline;
 }
+
+.strike {
+  text-decoration: line-through;
+}
