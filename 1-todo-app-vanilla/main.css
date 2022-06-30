@@ -52,7 +52,7 @@ li > span {
   margin-right: 1.5rem;
 }
 
-li > button {
+button {
   border-radius: 1rem;
   width: 3rem;
   height: 1.5rem;
