@@ -1,0 +1,69 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: start;
+  min-height: 100vh;
+  background-color: aqua;
+}
+
+.top-container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.bottom-container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.todo-list-container {
+  background-color: beige;
+  min-height: 70vh;
+}
+
+#todo-list {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  list-style: none;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+li > span {
+  margin-right: 1.5rem;
+}
+
+li > button {
+  border-radius: 1rem;
+  width: 3rem;
+  height: 1.5rem;
+  margin-left: 1rem;
+  background-color: aliceblue;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: inline;
+}
