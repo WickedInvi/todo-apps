@@ -2,13 +2,13 @@ const addTask = document.querySelector('#btn-addTask');
 const inputTask = document.querySelector('#text-todoTask');
 const todoList = document.querySelector('#todo-list');
 
-console.log(inputTask.textContent);
+// console.log(inputTask.textContent);
 
 let todoArr = [{ task: 'Make coffee' }, { task: 'Drink coffee' }];
 
 addTask.addEventListener('click', (event) => {
   event.preventDefault();
-  console.log(inputTask.value);
+  // console.log(inputTask.value);
 
   if (inputTask.value === '') {
     alert('Task is empty, please add a task');
@@ -47,6 +47,9 @@ const createTodo = (arr) => {
       deleteTodo(id);
     });
     editBtn.addEventListener('click', () => {
+      editBtn.textContent =
+        editBtn.textContent === 'Edit' ? 'Save' : 'Edit';
+
       editTodo(id);
     });
 
@@ -63,10 +66,10 @@ const createTodo = (arr) => {
 };
 
 const editTodo = (id) => {
-  let inputField = document.querySelector(`#input-${id}`);
-  let task = document.querySelector(`#task-${id}`);
+  let inputField = document.getElementById(`input-${id}`);
+  let task = document.getElementById(`task-${id}`);
 
-  console.log(inputField);
+  // console.log(inputField);
   if (inputField.classList.contains('hidden')) {
     inputField.classList.remove('hidden');
     task.classList.add('hidden');
